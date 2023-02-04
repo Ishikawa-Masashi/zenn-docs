@@ -10,6 +10,8 @@ Fire Foxで動く縦書きエディタを開発した。
 ブラウザでは基本的に横書きしかできない。しかし、Fire Foxのみ縦書きに対応している。
 そこでFire Foxで動く縦書きエディタを作成した。
 
+
+
 [Monaka Editor](https://ishikawa-masashi.github.io/monaka-editor-demo/index.html)
 
 ## Monaka Editorについて 
