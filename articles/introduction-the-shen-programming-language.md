@@ -13,6 +13,13 @@ published: true
 
 ShenはLispの方言の1つで静的な型付けShenは強力な型システムや、関数型プログラミング言語をサポートしています。
 
+# 実行の仕方
+
+ブラウザでShenを実行できるようにした。
+ただし、一部の機能のみ。
+
+https://ishikawa-masashi.github.io/shenscript-playground/
+
 ## FEATURES
 
 ### PATTERN MATCHING

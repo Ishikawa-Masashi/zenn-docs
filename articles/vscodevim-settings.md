@@ -1,5 +1,5 @@
 ---
-title: "自分の考えた最強のVScodeVimの設定"
+title: "いろいろ考えた末のVScodeVimの設定"
 emoji: "👻"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [Vim, 環境構築, VSCode]
@@ -8,13 +8,16 @@ published: true
 
 # はじめに
 
-自分なりに考えて辿り着いた設定です。
+この設定は mattun さんの記事を参考にしました。ほとんどそのままですが、私の使用しているキーボードは英語配列なので少し変更しています。
+
+https://qiita.com/koutarn/items/06d34c279ca06c977884
 
 # キーボードについて
 
-使用しているキーボードが英語配列で、Ctrl+Spaceを日本語入力への切り替えに使用しているので、Ctrl+Spaceのキーバインドは使用しない。
+使用しているキーボードが英語配列で、Ctrl+Space を日本語入力への切り替えに使用しているので、Ctrl+Space のキーバインドは使用しない。
 
-## settings.json 
+## settings.json
+
 ```json
 {
   // visual studio codeの設定
@@ -317,9 +320,30 @@ published: true
 ```
 
 ## keybindings.json
+
 ```json
 // 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
 [
+  //========================================================================
+  // vim ...            Editorでなら処理待ちが発生せず入力可能
+  // keybinding.json    あらゆる場面で制御可能、入力をすると処理待ち発生
+  // prefix Editor基本操作 (vim)                      -> space
+  //        Editor none Active (keybindings.json)     -> space
+  //        commandparet呼び出し (vim)                -> space
+  //        基本UI操作(keybinding.json)               -> ctrl+space
+  //          exprorer操作(keybinding.json)           -> none
+  //          サジェスチョン操作(keybindin.json)      ->ctrl
+  //          コマンドパレット操作(keybindin.json)    ->ctrl
+  //        sidebar呼び出し(keybinding.json)          -> cntr+space
+  //        panel呼び出し(keybinding.json)            -> cntr+space
+  //========================================================================
+
+  //======================================================================================
+  // bind方法はここを参照する
+  // https://vscode-doc-jp.github.io/docs/getstarted/keybindings.html
+  // https://code.visualstudio.com/docs/getstarted/keybindings#_when-clause-contexts
+  //======================================================================================
+
   // サジェスチョン操作
   {
     "key": "ctrl+j",
@@ -401,9 +425,9 @@ published: true
 
   // サイドバーからの移動
   {
-    "key": "space l",
+    "key": "shift+space l",
     "command": "workbench.action.focusFirstEditorGroup",
-    "when": "explorerViewletVisible && explorerViewletFocus && !editorFocus && !inQuickOpen"
+    // "when": "explorerViewletVisible && explorerViewletFocus && !editorFocus && !inQuickOpen"
   },
 
   /* -------------------------------- explorer -------------------------------- */
@@ -556,9 +580,13 @@ published: true
     "command": "workbench.actions.view.problems"
   }
 ]
+
 ```
 
 ## 補足
 
-zenhanを使用しています。
+フォントにはCicaを使用しています。
+https://github.com/miiton/Cica
+
+インサートモードからノーマルモードへ戻るとき、自動的に英字入力モードへ戻るようにするために、zenhan を使用しています。
 https://qiita.com/iuchi/items/9ddcfb48063fc5ab626c
