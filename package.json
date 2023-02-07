@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/normalsalt/zenn-connects#readme",
   "dependencies": {
-    "zenn-cli": "^0.1.91"
+    "zenn-cli": "^0.1.137"
   }
 }
