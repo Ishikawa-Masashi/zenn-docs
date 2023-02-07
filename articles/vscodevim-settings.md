@@ -14,7 +14,9 @@ https://qiita.com/koutarn/items/06d34c279ca06c977884
 
 # キーボードについて
 
-使用しているキーボードが英語配列で、Ctrl+Space を日本語入力への切り替えに使用しているので、Ctrl+Space のキーバインドは使用しない。
+使用しているキーボードが英語配列で、Ctrl + Space を日本語入力への切り替えに使用している。
+なので、Ctrl + Space のキーバインドは使用しない。
+
 
 ## settings.json
 
