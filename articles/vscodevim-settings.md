@@ -324,26 +324,6 @@ https://qiita.com/koutarn/items/06d34c279ca06c977884
 ```json
 // 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
 [
-  //========================================================================
-  // vim ...            Editorでなら処理待ちが発生せず入力可能
-  // keybinding.json    あらゆる場面で制御可能、入力をすると処理待ち発生
-  // prefix Editor基本操作 (vim)                      -> space
-  //        Editor none Active (keybindings.json)     -> space
-  //        commandparet呼び出し (vim)                -> space
-  //        基本UI操作(keybinding.json)               -> ctrl+space
-  //          exprorer操作(keybinding.json)           -> none
-  //          サジェスチョン操作(keybindin.json)      ->ctrl
-  //          コマンドパレット操作(keybindin.json)    ->ctrl
-  //        sidebar呼び出し(keybinding.json)          -> cntr+space
-  //        panel呼び出し(keybinding.json)            -> cntr+space
-  //========================================================================
-
-  //======================================================================================
-  // bind方法はここを参照する
-  // https://vscode-doc-jp.github.io/docs/getstarted/keybindings.html
-  // https://code.visualstudio.com/docs/getstarted/keybindings#_when-clause-contexts
-  //======================================================================================
-
   // サジェスチョン操作
   {
     "key": "ctrl+j",
@@ -426,7 +406,7 @@ https://qiita.com/koutarn/items/06d34c279ca06c977884
   // サイドバーからの移動
   {
     "key": "shift+space l",
-    "command": "workbench.action.focusFirstEditorGroup",
+    "command": "workbench.action.focusFirstEditorGroup"
     // "when": "explorerViewletVisible && explorerViewletFocus && !editorFocus && !inQuickOpen"
   },
 
@@ -580,12 +560,11 @@ https://qiita.com/koutarn/items/06d34c279ca06c977884
     "command": "workbench.actions.view.problems"
   }
 ]
-
 ```
 
 ## 補足
 
-フォントにはCicaを使用しています。
+フォントには Cica を使用しています。
 https://github.com/miiton/Cica
 
 インサートモードからノーマルモードへ戻るとき、自動的に英字入力モードへ戻るようにするために、zenhan を使用しています。
