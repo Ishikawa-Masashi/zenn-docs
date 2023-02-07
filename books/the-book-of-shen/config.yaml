@@ -1,6 +1,6 @@
 title: "The Book Of Shen"
-summary: "本の紹介文"
-topics: ["markdown", "zenn", "react"] # トピック（5つまで）
+summary: "The Book of Shenをざっくり和訳しました。"
+topics: ["lisp"] # トピック（5つまで）
 published: true # falseだと下書き
 price: 0 # 有料の場合200〜5000
 chapters:
