@@ -18,18 +18,29 @@ ShenはLispの方言の1つで静的な型付けShenは強力な型システム�
 ブラウザでShenを実行できるようにした。
 ただし、一部の機能のみ。
 
-https://ishikawa-masashi.github.io/shenscript-playground/
+https://startling-yeot-d8ff86.netlify.app/
 
-## FEATURES
+## Sheの特徴
 
-### PATTERN MATCHING
-
+### パターンマッチ
+Shenにはパターンマッチがあります。
 ```lisp
 (define filter
   _ []       -> []
   F [X | Xs] -> [X | (filter F Xs)] where (F X)
   F [_ | Xs] -> (filter F Xs))
+
+(define even? 
+   1 -> false  
+   X -> (odd? (- X 1)))
+
+(define odd?  
+   1 -> true  
+   X -> (even? (- X 1)))
+
+(filter (even?) [1 2 3 4 5])
 ```
+=> [2 4 6]
 
 ```lisp
 (define element?
