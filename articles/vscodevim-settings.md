@@ -31,9 +31,7 @@ https://qiita.com/koutarn/items/06d34c279ca06c977884
   "editor.wordWrap": "on", //1行長くならないように
   "editor.lineHeight": 0, //1行の高さ
   "editor.renderLineHighlight": "all", //現在の行番号含めて強調表示する
-  //   "editor.minimap.enabled": false, //minimap削除
   "editor.insertSpaces": true, //tabをスペースとして扱う
-  //   "editor.tabSize": 4, //tabをデフォルトで4にする
   "editor.renderWhitespace": "boundary", //エディタ上での空白表示設定
   "editor.renderControlCharacters": true, //制御文字の表示
   "editor.cursorBlinking": "smooth", //カーソルの点滅をヌルヌルにする
